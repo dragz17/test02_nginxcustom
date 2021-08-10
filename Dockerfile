@@ -1,2 +1,3 @@
 FROM nginx:latest
-COPY ./hello.txt /usr/share/nginx/html/hello.txt
+COPY ./default.conf /etc/nginx/conf.d/default.conf
+COPY ./hello.txt /var/www/hello.txt
